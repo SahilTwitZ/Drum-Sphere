@@ -1,0 +1,108 @@
+/* General Styling */
+body {
+  text-align: center;
+  background-color: #DBD8E3;
+  font-family: "Flavors", cursive;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Navbar Styling */
+.navbar {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #5C5470 ;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-heading {
+  font-size: 2.25rem;
+  color: #352F44;
+  text-shadow: 3px 3px 5px #DBD8E3;
+  margin: 0;
+  animation: pulse 2s infinite; /* Adjust the duration as needed */
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    transform: scale(1.1); /* Slightly larger */
+  }
+}
+
+
+/* Drum Buttons */
+.drum {
+  font-family: "Flavors", cursive;
+  outline: none;
+  border: 5.5px solid #352F44;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+  color: #000000;
+}
+
+.black-image {
+  filter: grayscale(100%) brightness(1);
+}
+
+
+.drum:hover {
+  box-shadow: 0px 4px 10px rgb(255, 255, 255)
+}
+
+/* Drum Background Images */
+.w { background-image: url("./images/tom1.png"); }
+.a { background-image: url("./images/tom2.png"); }
+.s { background-image: url("./images/tom3.png"); }
+.d { background-image: url("./images/tom4.png"); }
+.j { background-image: url("./images/crash.png"); }
+.k { background-image: url("./images/kick.png"); }
+.l { background-image: url("./images/snare.png"); }
+
+/* Layout */
+.set {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #5C5470;
+  opacity: 0.5;
+}
+
+/* Footer Styling */
+.footer {
+  color: #a8dadc;
+  font-size: 1.2rem;
+  padding: 15px;
+  background-color: #5C5470;
+  width: 100%;
+}
+
+.footer a {
+  font-weight: 400;
+  color: #352F44;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  text-shadow: 1px 1px 3px #DBD8E3;
+}
